@@ -1,6 +1,6 @@
 #  AI/ML Test Framework
 
-A Python-based test framework for validating and evaluating the AI/ML models and LLM chatbot in the PWP Rebate platform, a cloud-native AWS-hosted system for personalized patient engagement, pharma tenant onboarding, and rebate tracking.
+A Python-based test framework for validating and evaluating the AI/ML models and LLM chatbot in the Gen AI enabled platform, a cloud-native AWS-hosted system.
 
 ## Features
 - **LLM Testing**: Validates the LangChain + OpenAI chatbot for response correctness, relevancy, and hallucination using DeepEval.
@@ -11,7 +11,7 @@ A Python-based test framework for validating and evaluating the AI/ML models and
 
 ## Directory Structure
 ```
-pwp_rebate_test_framework/
+test_framework/
 ├── config/                    # Configuration files
 │   ├── config.yaml           # Test parameters (endpoints, thresholds)
 │   └── credentials.py        # Secure credential management
@@ -42,8 +42,8 @@ pwp_rebate_test_framework/
 ## Installation
 1. Clone the repository:
    ```bash
-   git clone <repository-url>
-   cd pwp_rebate_test_framework
+   git clone https://github.com/mutukulamahesh/genai-qa-eval-framework.git
+   cd test_framework
    ```
 2. Install dependencies:
    ```bash
@@ -107,4 +107,4 @@ pwp_rebate_test_framework/
 MIT License
 
 ## Contact
-For issues or questions, contact Mahesh Mutukula at your.mmk.mutu@gmail.com.
+For issues or questions, contact Mahesh Mutukula at mmk.mutu@gmail.com.
