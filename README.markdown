@@ -107,4 +107,4 @@ pwp_rebate_test_framework/
 MIT License
 
 ## Contact
-For issues or questions, contact Mahesh Mutukula at your.mmk.mutu@gmail.com.
+For issues or questions, contact Mahesh Mutukula at mmk.mutu@gmail.com.
