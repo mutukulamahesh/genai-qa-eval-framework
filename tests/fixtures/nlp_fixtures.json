@@ -1,0 +1,24 @@
+[
+    {
+        "text": "Patient reports taking ibuprofen for headache",
+        "expected_entities": [
+            {"text": "ibuprofen", "label": "DRUG"},
+            {"text": "headache", "label": "SYMPTOM"}
+        ],
+        "expected_intent": "medication_query"
+    },
+    {
+        "text": "Check eligibility for metformin rebate",
+        "expected_entities": [
+            {"text": "metformin", "label": "DRUG"}
+        ],
+        "expected_intent": "check_eligibility"
+    },
+    {
+        "text": "Dispute claim for incorrect insulin dosage",
+        "expected_entities": [
+            {"text": "insulin", "label": "DRUG"}
+        ],
+        "expected_intent": "resolve_dispute"
+    }
+]

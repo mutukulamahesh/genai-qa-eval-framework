@@ -1,0 +1,17 @@
+[
+    {
+        "model": "adherence",
+        "input": {"features": [1.0, 2.0, 3.0]},
+        "expected_label": 1
+    },
+    {
+        "model": "eligibility",
+        "input": {"features": [0.5, 1.5, 2.5]},
+        "expected_label": 0
+    },
+    {
+        "model": "risk_score",
+        "input": {"features": [1.0, 1.0, 1.0]},
+        "expected_score": 0.75
+    }
+]

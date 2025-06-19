@@ -1,0 +1,59 @@
+# Configuration for AI/ML and LLM test framework
+llm:
+  lambda_function: "pwp-rebate-chatbot"  # AWS Lambda function for chatbot
+  api_key_env: "OPENAI_API_KEY"         # Environment variable for OpenAI API key
+  model_name: "gpt-3.5-turbo"           # OpenAI model
+  context_window: 4096                  # Max tokens for context
+  evaluation:
+    relevancy_threshold: 0.8            # Minimum relevancy score (DeepEval)
+    hallucination_threshold: 0.2        # Maximum hallucination score (DeepEval)
+    toxicity_threshold: 0.1             # Maximum toxicity score
+    faithfulness_threshold: 0.85        # Minimum faithfulness score
+
+nlp:
+  entity_extraction:
+    model: "en_core_web_sm"             # spaCy model for entity extraction
+    entities:                           # Expected entity types
+      - "DRUG"
+      - "SYMPTOM"
+      - "DIAGNOSIS"
+    min_precision: 0.85                 # Minimum precision for entity extraction
+    min_recall: 0.80                    # Minimum recall
+    min_f1: 0.82                        # Minimum F1-score
+  intent_detection:
+    model: "simple_classifier"          # Placeholder for Hugging Face or custom model
+    intents:                            # Supported intents
+      - "check_eligibility"
+      - "resolve_dispute"
+      - "medication_query"
+    min_accuracy: 0.90                  # Minimum intent detection accuracy
+
+ml:
+  sagemaker_endpoints:
+    adherence: "medication-adherence-model"  # SageMaker endpoint for adherence model
+    eligibility: "rebate-eligibility-model"  # SageMaker endpoint for eligibility model
+    risk_score: "user-risk-score-model"      # SageMaker endpoint for risk score model
+  evaluation:
+    classification:
+      min_precision: 0.85               # Minimum precision for classification models
+      min_recall: 0.80                  # Minimum recall
+      min_f1: 0.82                      # Minimum F1-score
+      min_auc_roc: 0.80                 # Minimum AUC-ROC
+    regression:
+      max_mse: 0.1                      # Maximum Mean Squared Error
+      min_r2: 0.75                      # Minimum R² score
+
+aws:
+  region: "us-east-1"                   # AWS region
+  api_gateway_url: "https://api.pwp-rebate.example.com"  # API Gateway URL
+  credentials_env:                      # Environment variables for AWS credentials
+    access_key: "AWS_ACCESS_KEY_ID"
+    secret_key: "AWS_SECRET_ACCESS_KEY"
+
+reporting:
+  output_dir: "reports/"                # Directory for test reports
+  visualize: true                       # Enable visualizations (e.g., confusion matrices)
+  formats:                              # Report formats
+    - "html"                            # pytest-html
+    - "allure"                          # Allure reports
+    - "json"                            # Custom JSON report

@@ -1,0 +1,17 @@
+[
+    {
+        "query": "Check my rebate eligibility for ibuprofen",
+        "context": "Patient is enrolled in PWP Rebate program, medication: ibuprofen",
+        "expected_response": "You are eligible for a rebate on ibuprofen"
+    },
+    {
+        "query": "What is my medication status?",
+        "context": "Patient ID: 12345, medication: metformin",
+        "expected_response": "Your medication status for metformin is active"
+    },
+    {
+        "query": "Resolve my claim dispute",
+        "context": "Claim ID: 67890, issue: incorrect rebate amount",
+        "expected_response": "Your claim dispute for ID 67890 is under review"
+    }
+]
