@@ -1,3 +1,11 @@
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#     http://www.apache.org/licenses/LICENSE-2.0
+#
+# © 2025 Mahesh Mutukula. All rights reserved.
+# This file is part of the GenAI QA Eval Framework.
+
 import boto3
 from typing import List, Dict, Any
 from sklearn.metrics import precision_recall_f1_score, mean_squared_error, r2_score

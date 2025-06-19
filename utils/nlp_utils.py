@@ -1,3 +1,11 @@
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#     http://www.apache.org/licenses/LICENSE-2.0
+#
+# © 2025 Mahesh Mutukula. All rights reserved.
+# This file is part of the GenAI QA Eval Framework.
+
 import spacy
 from typing import List, Dict, Tuple
 from sklearn.metrics import precision_recall_f1_score
